@@ -1,0 +1,40 @@
+- name: Laboratorio Ansible
+  hosts: docker
+  gather_facts: yes
+
+  tasks:
+
+    - name: Mostrar nombre del host
+      debug:
+        msg: "Servidor: {{ ansible_hostname }}"
+
+    - name: Mostrar sistema operativo
+      debug:
+        msg: "Sistema Operativo: {{ ansible_distribution }} {{ ansible_distribution_version }}"
+
+    - name: Crear directorio principal
+      file:
+        path: /tmp/ansible-demo
+        state: directory
+        mode: '0755'
+
+    - name: Crear archivo info.txt
+      copy:
+        dest: /tmp/ansible-demo/info.txt
+        content: |
+          Nombre del servidor: {{ ansible_hostname }}
+          Sistema Operativo: {{ ansible_distribution }} {{ ansible_distribution_version }}
+
+    - name: Crear directorios con loop
+      file:
+        path: "/tmp/ansible-demo/{{ item }}"
+        state: directory
+      loop:
+        - logs
+        - backup
+        - config
+
+    - name: Mostrar mensaje solo para Ubuntu
+      debug:
+        msg: "Este servidor ejecuta Ubuntu."
+      when: ansible_distribution == "Ubuntu"
