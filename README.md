@@ -93,5 +93,6 @@ No se presentaron errores durante la ejecución.
 ## Evidencia de ejecución
 
 <img width="1130" height="1027" alt="image" src="https://github.com/user-attachments/assets/bfa46273-c8e6-4a80-9050-d52c1c97eea4" />
+<img width="1407" height="190" alt="image" src="https://github.com/user-attachments/assets/66916c54-8db6-471d-ba44-c1000ca6effc" />
 
 
