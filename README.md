@@ -92,10 +92,6 @@ No se presentaron errores durante la ejecución.
 
 ## Evidencia de ejecución
 
-Agregar aquí la captura de pantalla de la ejecución exitosa del playbook.
+<img width="1130" height="1027" alt="image" src="https://github.com/user-attachments/assets/bfa46273-c8e6-4a80-9050-d52c1c97eea4" />
 
-```
-<img width="1130" height="1027" alt="image" src="https://github.com/user-attachments/assets/5dceff2c-c5b2-45d5-b1a4-2814d1852763" />
-
-```
 
